@@ -395,12 +395,12 @@ const GridGlobe = () => {
   ];
 
   return (
-    // remove dark:bg-black bg-white h-screen md:h-auto  w-full flex-row py-20
-    // change absolute -left-5 top-36, add w-full h-full md:top-40
+    // removed dark:bg-black bg-white h-screen md:h-auto  w-full flex-row py-20
+    // changed to absolute -left-5 top-36, add w-full h-full md:top-40
     <div className="flex items-center justify-center absolute -left-5 top-36 md:top-40 w-full h-full">
-      {/* remove h-full md:h-[40rem] */}
+      {/* removed h-full md:h-[40rem] from default code */}
       <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-96 px-4">
-        {/* remove these text divs */}
+        {/* removed these motion divs */}
         {/* <motion.div
           initial={{
             opacity: 0,
@@ -424,7 +424,7 @@ const GridGlobe = () => {
           </p>
         </motion.div> */}
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-        {/* remove -bottom-20 */}
+        {/* removed -bottom-20 */}
         <div className="absolute w-full h-72 md:h-full z-10">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
